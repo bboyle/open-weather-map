@@ -30,7 +30,15 @@ angular.module( 'OWMApp', [ 'ngRoute' ] )
 					}
 				}
 			})
+
+			.otherwise({ redirectTo: '/error' })
 		;
+	})
+
+	.run(function( $rootScope, $location ) {
+		$rootScope.$on( '$routeChangeError', function() {
+			$location.path( '/error' );
+		})
 	})
 
 
