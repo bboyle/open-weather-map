@@ -1,0 +1,21 @@
+{
+  "name": "open-weather-map",
+  "version": "0.0.0",
+  "authors": [
+    "Ben Boyle <benjamins.boyle@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://bboyle.github.io/open-weather-map/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.19",
+    "angular-route": "~1.2.19"
+  }
+}
