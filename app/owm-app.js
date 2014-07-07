@@ -10,7 +10,7 @@ angular.module( 'OWMApp', [ 'ngRoute' ] )
 		$routeProvider
 			.when( '/', {
 				templateUrl: 'home.html',
-				controller: 'HomeCtrl'
+				controller: 'HomeCtrl as home'
 			})
 
 			.when( '/error', { template: '<p>Error: Page not found</p>' })
@@ -43,7 +43,7 @@ angular.module( 'OWMApp', [ 'ngRoute' ] )
 
 
 	.controller( 'HomeCtrl', function( $scope ) {
-		// empty for now
+		this.welcomeMessage = 'Welcome home';
 	})
 
 	.controller( 'CityCtrl', function( $scope, city ) {
