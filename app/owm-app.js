@@ -38,7 +38,7 @@ angular.module( 'OWMApp', [ 'ngRoute' ] )
 	.run(function( $rootScope, $location ) {
 		$rootScope.$on( '$routeChangeError', function() {
 			$location.path( '/error' );
-		})
+		});
 	})
 
 
