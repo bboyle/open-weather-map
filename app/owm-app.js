@@ -1,4 +1,7 @@
-angular.module( 'OWMApp', [ 'ngRoute' ] )
+angular.module( 'OWMApp', [
+	'ngRoute',
+	'ngAnimate'
+])
 
 	.value( 'owmCities', [
 		'New York',
